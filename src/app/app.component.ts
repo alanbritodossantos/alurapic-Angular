@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'alurapic';
-  description = 'leão';
+  description = 'Leão';
   url = 'https://exame.com/wp-content/uploads/2019/07/rei-leao.jpg';
-
 }
