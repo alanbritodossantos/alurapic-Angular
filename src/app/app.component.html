@@ -1,3 +1,1 @@
-<ap-photo url="https://exame.com/wp-content/uploads/2019/07/rei-leao.jpg" description="leão"></ap-photo>
-<ap-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Bald_Eagle_Portrait.jpg/1200px-Bald_Eagle_Portrait.jpg"
-description="aguia"></ap-photo>
+<ap-photo *ngFor="let photo of photos" [url]="photo.url" [description]="photo.description"></ap-photo>
