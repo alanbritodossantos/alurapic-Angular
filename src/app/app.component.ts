@@ -10,11 +10,14 @@ import { PhotoService } from './photos/photo/photo.service';
 
 export class AppComponent {
 
-  photos: Object[] = [];
+  photos: any[] = [];
 
   constructor(photoService: PhotoService) {
     photoService
       .listFromUser('flavio')
-      .subscribe(photos => this.photos = photos);
+      .subscribe(photos => {
+        console.log(photos[0].userId);
+        this.photos = photos
+      });
   }
 }
